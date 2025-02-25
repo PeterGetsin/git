@@ -1,0 +1,18 @@
+ul {
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+/* Using color, font-family, and font-size to change the look of the unordered list on the site
+    Inheritance can be seen here since the ul tag is the parent tag to all of the li tags which turn green as a result 
+    of making ul green since the child tag will inheret from the parent tag. All info on the style elements are found in 
+    chapters 11 and 12.  */
+
+h2{
+    background-color: bisque;
+}
+/* Using the background-color property to change the appearance of the color of the space taken up by all h2 tags */
+
+footer p{
+   color: darkorange;
+}
