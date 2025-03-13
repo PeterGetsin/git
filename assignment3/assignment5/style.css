@@ -28,3 +28,40 @@ footer p{
     padding: 15px;
     text-align: center;
 }
+
+.navbar {
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 100px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 480px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        justify-content: center
+    }
+}
