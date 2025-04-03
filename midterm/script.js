@@ -38,10 +38,9 @@ window.onload = function () {
     }
 
 
-    
+
     // Reset Button
     const resetButton = document.createElement("button");
-    resetButton.id = "resetColorBtn";
     resetButton.textContent = "Change Color";
     resetButton.style.position = "fixed";
     resetButton.style.top = "10px";
