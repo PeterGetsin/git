@@ -37,6 +37,8 @@ window.onload = function () {
         document.body.style.backgroundColor = storedUserInfo.selectedColor;
     }
 
+
+    
     // Reset Button
     const resetButton = document.createElement("button");
     resetButton.id = "resetColorBtn";
