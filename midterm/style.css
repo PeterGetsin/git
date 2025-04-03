@@ -61,27 +61,8 @@ main {
     text-align: center;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-}
-
 section {
     border: #6e4b3a solid 1px;
-}
-
-article img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
 }
 
 h1 {
@@ -102,17 +83,6 @@ ul li{
     font-size: 18px;
     padding: 8px 12px;
     border-radius: 5px;
-}
-article {
-    background-color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-article h4 {
-    margin-top: 0;
-    color: #6e4b3a;
 }
 
 footer {
@@ -143,16 +113,6 @@ main section{
     background-color: #fff;
     border-radius: 8px;
 }
-
-article a {
-    color: #9e2a2f;
-    text-decoration: none;
-}
-
-article a:hover {
-    text-decoration: underline;
-}
-
 
 
 /* Responsive styles for phone */
