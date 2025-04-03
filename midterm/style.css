@@ -56,3 +56,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Images */
+main img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+main section{
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
