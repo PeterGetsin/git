@@ -70,12 +70,17 @@ article {
 section {
     border: #6e4b3a solid 1px;
 }
+
 article img {
     width: 100%;
     max-width: 400px;
     height: auto;
     margin: 0 auto;
     border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2, h3 {
@@ -145,18 +150,17 @@ article a:hover {
 
 
 
-
 /* Responsive styles for phone */
 @media (min-width: 480px) {
     header {
         padding: 10px 0;
-        text-align: left;
     }
     
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-left: 10px;
+        text-align: center;
     }
 
     nav ul li {
@@ -164,7 +168,13 @@ article a:hover {
     }
 
     main {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 6px 10px;
     }
 
     article {
@@ -181,11 +191,18 @@ article a:hover {
         justify-content: center;
     }
     main {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    ul li {
+        font-size: 17px;
+        padding: 7px 12px;
     }
 
     article {
-        margin: 15px;
+        margin: 20px;
+        padding: 20px;
     }
 }
 
