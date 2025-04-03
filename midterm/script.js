@@ -50,9 +50,7 @@ window.onload = function () {
     document.body.appendChild(resetButton);
 
     resetButton.addEventListener("click", function () {
-        localStorage.removeItem("userInfo"); // Clear stored data
+        localStorage.removeItem("userInfo"); 
         askUserPreferences(); // Ask again
     });
-
-    console.log("The first color in the array is:", colors[0]); // should output grey HEX
 };
