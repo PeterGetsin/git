@@ -67,6 +67,9 @@ article {
     border-radius: 8px;
 }
 
+section {
+    border: #6e4b3a solid 1px;
+}
 article img {
     width: 100%;
     max-width: 400px;

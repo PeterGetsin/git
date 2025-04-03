@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        form.reset();
+
+        alert("Your message has been sent!")
+    });
+});
+
+
+
+
 window.onload = function () {
     if (localStorage.getItem("hasCodeRunBefore") === null) {
 const colors = ["#fff9f7", "#fefff7", "#f7fff7"]; // grey, yellow, green
@@ -10,18 +25,5 @@ document.body.style.backgroundColor = userInfo.selectedColor;
 }
 
 
-
-
-document,addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contact-form");
-
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        form.reset();
-
-        alert("Your message has been sent!")
-    });
-});
 
 
