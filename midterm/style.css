@@ -1,12 +1,39 @@
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f1e1c6;
 }
 
 header {
-    background-color: #333;
+    background-color: #6e4b3a;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -25,6 +52,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+    text-decoration: underline;
 }
 
 main {
@@ -32,7 +66,7 @@ main {
 }
 
 h2, h3 {
-    color: #333;
+    color: #9e2a2f;
 }
 
 article {
@@ -40,15 +74,15 @@ article {
     margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article h4 {
     margin-top: 0;
+    color: #6e4b3a;
 }
 
 footer {
-    background-color: #333;
+    background-color: #6e4b3a;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -74,4 +108,53 @@ main section{
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
+}
+
+article a {
+    color: #9e2a2f;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Responsive styles for phone */
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+
+/* Responsive style for tavlet */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    article {
+        margin: 15px;
+    }
+}
+
+
+/* Responsive style for Laptop */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    article {
+        margin: 20px;
+        padding: 15px;
+    }
 }
