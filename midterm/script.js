@@ -23,6 +23,7 @@ window.onload = function () {
 
         if (colorChoice >= 0 && colorChoice <= 2) {
             const userInfo = { name: userName, selectedColor: colors[colorChoice] };
+            console.log("The first color in the array is:", colors[0]); // should output grey HEX
             localStorage.setItem("userInfo", JSON.stringify(userInfo));
             document.body.style.backgroundColor = userInfo.selectedColor;
         } else {
@@ -54,3 +55,5 @@ window.onload = function () {
         askUserPreferences(); // Ask again
     });
 };
+
+
