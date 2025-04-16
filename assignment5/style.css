@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+ul {
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+/* Using color, font-family, and font-size to change the look of the unordered list on the site
+    Inheritance can be seen here since the ul tag is the parent tag to all of the li tags which turn green as a result 
+    of making ul green since the child tag will inheret from the parent tag. All info on the style elements are found in 
+    chapters 11 and 12.  */
+
+h2{
+    background-color: bisque;
+}
+/* Using the background-color property to change the appearance of the color of the space taken up by all h2 tags */
+
+footer p{
+   color: darkorange;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 100px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        justify-content: center
+    }
+}
