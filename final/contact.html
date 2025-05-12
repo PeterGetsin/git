@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the team behind the Ancient Civilizations website.">
+    <title>Contact - Ancient Civilizations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><u>Ancient Civilizations</u></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mesopotamia.html">Mesopotamia</a></li>
+                <li><a href="egypt.html">Ancient Egypt</a></li>
+                <li><a href="rome.html">Ancient Rome</a></li>
+                <li><a href="mayans.html">The Mayans</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about-page">
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or suggestions, feel free to reach out to us using the contact form below:</p>
+            <form id="contact-form" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ancient Civilizations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
