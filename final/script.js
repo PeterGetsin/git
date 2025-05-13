@@ -39,21 +39,4 @@ window.onload = function () {
     }
 
 
-
-    // Reset Button
-    const resetButton = document.createElement("button");
-    resetButton.textContent = "Change Color";
-    resetButton.style.position = "fixed";
-    resetButton.style.top = "10px";
-    resetButton.style.right = "10px";
-    resetButton.style.padding = "10px";
-    resetButton.style.cursor = "pointer";
-    document.body.appendChild(resetButton);
-
-    resetButton.addEventListener("click", function () {
-        localStorage.removeItem("userInfo"); 
-        askUserPreferences(); // Ask again
-    });
-};
-
-
+}
