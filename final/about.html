@@ -22,12 +22,30 @@
         <h1><u>Ancient Civilizations</u></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mesopotamia.html">Mesopotamia</a></li>
-                <li><a href="egypt.html">Ancient Egypt</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="affiliate.html">Affiliate</a></li>
+                <li><a href="index.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'Home'
+                  });">Home</a></li>
+                <li><a href="mesopotamia.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'Mesopotamia'
+                  });">Mesopotamia</a></li>
+                <li><a href="egypt.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'Ancient Egypt'
+                  });">Ancient Egypt</a></li>
+                <li><a href="about.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'About'
+                  });" class="active">About</a></li>
+                <li><a href="contact.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'Contact'
+                  });">Contact</a></li>
+                <li><a href="affiliate.html" onclick="gtag('event', 'nav_click', {
+                    event_category: 'navigation',
+                    event_label: 'Affiliate'
+                  });">Affiliate</a></li>
             </ul>
         </nav>
     </header>
@@ -35,6 +53,10 @@
         <section>
             <h2>About Ancient Civilizations</h2>
             <p>This website is dedicated to exploring and learning about some of the most influential ancient civilizations in history. From Mesopotamia to Ancient Rome, we bring their stories, cultures, and achievements to life.</p>
+            <button onclick="gtag('event', 'CTR', {
+                event_category: 'callToAction',
+                event_label: 'Donate'
+              });">Learn More</button>
         </section>
     </main>
     <footer>
