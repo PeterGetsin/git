@@ -1,42 +1,24 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contact-form");
-
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        form.reset();
-
-        alert("Your message has been sent!")
-    });
-    
-});
-
-
-
-
-window.onload = function () {
-    const colors = ["#fff9f7", "#fefff7", "#f7fff7"]; // grey, yellow, green
-
-    function askUserPreferences() {
-        const userName = prompt("What is your name?");
-        let colorChoice = prompt("Pick a background color: 0 for grey, 1 for yellow, 2 for green");
-
-        if (colorChoice >= 0 && colorChoice <= 2) {
-            const userInfo = { name: userName, selectedColor: colors[colorChoice] };
-            console.log("The first color in the array is:", colors[0]); // should output grey HEX
-            localStorage.setItem("userInfo", JSON.stringify(userInfo));
-            document.body.style.backgroundColor = userInfo.selectedColor;
-        } else {
-            alert("Invalid choice. Please reload and pick a valid color option (0, 1, or 2).");
-        }
-    }
-
-    if (!localStorage.getItem("userInfo")) {
-        askUserPreferences();
+    document.addEventListener("DOMContentLoaded", function () {
+    let userName = localStorage.getItem("name");
+    let userTheme = localStorage.getItem("theme");
+  
+    if (!userName || !userTheme) {
+      userName = prompt("What's your name?");
+      userTheme = prompt("Do you prefer dark or light theme?").toLowerCase();
+  
+      localStorage.setItem("name", userName);
+      localStorage.setItem("theme", userTheme);
     } else {
-        const storedUserInfo = JSON.parse(localStorage.getItem("userInfo"));
-        document.body.style.backgroundColor = storedUserInfo.selectedColor;
+      // Show popup greeting only if it's not a first-time visit
+      alert(`Welcome back, ${userName}!`);
     }
-
-
-}
+  
+    // Theme Application
+    if (userTheme === "dark") {
+      document.body.style.backgroundColor = "#121212";
+    } else {
+      document.body.style.backgroundColor = "#ffffff";
+      document.body.style.color = "#121212";
+    }
+  });
+  
